@@ -6,8 +6,6 @@
             "use": "@now/python"
         }
     ],
-    "framework": "@now/python",
-
     "routes": [
         {
             "src": "/veiculos",
