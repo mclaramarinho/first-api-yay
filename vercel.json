@@ -3,13 +3,15 @@
     "builds": [
         {
             "src": "./main.py",
-            "use": "@vercel/python"
+            "use": "@now/python"
         }
     ],
+    "framework": "@now/python",
+
     "routes": [
         {
-            "src": "/(.*)",
-            "dest": "/"
+            "src": "/veiculos",
+            "dest": "main.py"
         }
     ]
 }
