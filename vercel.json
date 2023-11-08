@@ -1,15 +1,10 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "./main.py",
-            "use": "@now/python"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/veiculos",
-            "dest": "./main.py"
-        }
-    ]
+  "project": "my-flask-app",
+  "version": 2,
+  "build": {
+    "src": ["main.py"],
+    "functions": {
+      "veiculos.handler": "main.app"
+    }
+  }
 }
