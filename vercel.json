@@ -11,7 +11,7 @@
     "routes": [
         {
             "src": "/veiculos",
-            "dest": "main.py"
+            "dest": "./main.py"
         }
     ]
 }
