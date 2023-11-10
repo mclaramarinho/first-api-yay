@@ -1,16 +1,5 @@
 {
-  "version": 2,
-  "routes": [
-    {
-      "src": "/veiculos",
-      "dest": "main.py"
-    }
-  ],
-  "builds": [
-    {
-      "src": "main.py",
-      "use": "@now/python"
-    }
-  ],
-  "framework": "@now/python"
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/first-api-yay/main.py" }
+  ]
 }
